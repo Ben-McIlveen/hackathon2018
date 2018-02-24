@@ -4,7 +4,7 @@ from .utils import checks
 from .utils.dataIO import dataIO
 import os
 
-class Search():
+class search():
   def __init__(self.bot):
     self.bot = bot
   @commands.command(pass_context = True)
