@@ -11,6 +11,3 @@ facts = ['Pyeongchang is the smallest city to host the winter games since 1994.'
 while timer=True:
   time.sleep(10)
   self.bot.say(fact[random.randint(0,len(facts)-1)])
-    
-    
-    
