@@ -9,6 +9,7 @@ class search():
     self.bot = bot
   @commands.command(pass_context = True)
   async def Search(self, ctx, role_name):
+    await self.bot.say("command correct")
     a = ctx.server.roles
     for users in role:
       await self.bot.say(users)
