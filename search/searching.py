@@ -12,3 +12,7 @@ class Search():
     a = ctx.server.roles
     for users in role:
       await self.bot.say(users)
+      
+ def setup(bot):
+    n = Search(bot)
+    bot.add_cog(n)
