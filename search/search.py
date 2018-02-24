@@ -7,7 +7,7 @@ import os
 class search():
   def __init__(self.bot):
     self.bot = bot
-  @bot.command(pass_context = True)
+  @bot.command()
   async def Search(self, ctx, role_name):
     await self.bot.say("command correct")
     a = ctx.server.roles
