@@ -11,4 +11,4 @@ class search():
   async def search(self, ctx, role_name):
     a = ctx.server.roles
     for users in role:
-      await.self.bot.say(users)
+      await self.bot.say(users)
