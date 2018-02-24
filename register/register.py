@@ -14,7 +14,7 @@ class search():
             for roles in a:
                 if role.name == role_name:
                     for users in a:
-                        print(users)
+                        await self.bot.say(user)
             
 
 def check_folders(): #Creates a folder
