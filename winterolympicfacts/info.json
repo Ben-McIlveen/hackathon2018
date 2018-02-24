@@ -1,8 +1,8 @@
 {
-    "AUTHOR" : "ZAC",
+    "AUTHOR" : "CanT MaKE Up ThEiR MiNd TeaM",
     "INSTALL_MSG" : "WinterOlympicFacts",
-    "NAME" : "winterolympicfacts",
     "SHORT" : "Collection of winter facts requested by the community",
-    "DESCRIPTION" : "A collection of winter olympic facts."
+    "DESCRIPTION" : "A collection of winter olympic facts.",
+    "NAME" : "winterolympicfacts",
     "HIDDEN" : false
 }
