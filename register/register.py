@@ -13,8 +13,7 @@ class register():
         a = ctx.server.roles
             for roles in a:
                 if role.name == role_name:
-                    b = self.getPeople()
-                    await.sekf.bot.say(b)
+                    print(role_name)
             
 
 def check_folders(): #Creates a folder
