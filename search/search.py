@@ -4,10 +4,11 @@ from .utils import checks
 from .utils.dataIO import dataIO
 import os
 
-class search():
-  def __init__(self.bot):
-    self.bot = bot
-  @commands.command(pass_context=True, name="search")
+def __init__(self.bot):
+  self.bot = bot
+  
+  
+@bot.command(pass_context=True)
   async def Search(self, ctx, role_name):
     await self.bot.say("command correct")
     a = ctx.server.roles
