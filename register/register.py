@@ -7,6 +7,15 @@ import os
 class register():
     def __init__(self, bot):
       self.bot=bot
+    
+    @commands.command(pass_context=true)
+    async def register(self,ctx, role_name):
+        a = ctx.server.roles
+            for roles in a:
+                if role.name == role_name:
+                    b = self.getPeople()
+                    await.sekf.bot.say(b)
+            
 
 def check_folders(): #Creates a folder
     if not os.path.exists("data/"):
