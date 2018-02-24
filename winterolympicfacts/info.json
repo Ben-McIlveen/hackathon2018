@@ -4,5 +4,5 @@
     "NAME" : "winterolympicfacts",
     "SHORT" : "Collection of winter facts requested by the community",
     "DESCRIPTION" : "A collection of winter olympic facts."
-    "HIDDEN" : False
+    "HIDDEN" : false
 }
