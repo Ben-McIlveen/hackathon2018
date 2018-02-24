@@ -1,1 +1,8 @@
-
+{
+    "AUTHOR" : "CanT MaKE Up ThEiR MiNd TeaM",
+    "INSTALL_MSG" : "searches for player.",
+    "SHORT" : "Searches fo people",
+    "DESCRIPTION" : "dunno",
+    "TAGS" : ["utility", "role", "managment", "notifications"],
+    "HIDDEN" : false
+}
