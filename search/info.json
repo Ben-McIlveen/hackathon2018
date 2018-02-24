@@ -1,7 +1,7 @@
 {
     "AUTHOR" : "Team that cant make a nem",
     "INSTALL_MSG" : "Searches for people",
-    "NAME" : "Searcher",
+    "NAME" : "search",
     "SHORT" : "DMs a user when they gain a role",
     "DESCRIPTION" : "allows to search for other members",
     "TAGS" : ["utility", "role", "managment", "notifications"],
