@@ -4,7 +4,7 @@ from .utils import checks
 from .utils.dataIO import dataIO
 import os
 
-class register():
+class search():
     def __init__(self, bot):
       self.bot=bot
     
@@ -13,7 +13,8 @@ class register():
         a = ctx.server.roles
             for roles in a:
                 if role.name == role_name:
-                    print(role_name)
+                    for users in a:
+                        print(users)
             
 
 def check_folders(): #Creates a folder
