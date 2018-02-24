@@ -7,7 +7,7 @@ import os
 class Search():
   def __init__(self.bot):
     self.bot = bot
-  @commands.command(pass_context = true)
+  @commands.command(pass_context = True)
   async def Search(self, ctx, role_name):
     a = ctx.server.roles
     for users in role:
