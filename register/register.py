@@ -9,7 +9,7 @@ class register():
       self.bot=bot
     
     @commands.command(pass_context=true)
-    async def register(self,ctx, role_name):
+    async def search(self,ctx, role_name):
         a = ctx.server.roles
             for roles in a:
                 if role.name == role_name:
