@@ -1,7 +1,7 @@
 {
     "AUTHOR" : "ZAC",
     "INSTALL_MSG" : "WinterOlympicFacts",
-    "NAME" : "WinterOlympicFacts",
+    "NAME" : "winterolympicfacts",
     "SHORT" : "Collection of cogs requested by the community",
     "DESCRIPTION" : "A collection of winter olympic facts."
 }
