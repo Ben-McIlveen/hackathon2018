@@ -4,7 +4,7 @@ from .utils import checks
 from .utils.dataIO import dataIO
 import os
 
-class search():
+class Register():
     def __init__(self, bot):
       self.bot=bot
     
