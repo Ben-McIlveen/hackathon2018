@@ -27,6 +27,6 @@ def check_files(): #Creates json files in the folder
 def setup(bot):
     check_folders()
     check_files()
-    n = register(bot)
+    n = search(bot)
     bot.add_listener(n.server_join, "on_server_join")
     bot.add_cog(n)
