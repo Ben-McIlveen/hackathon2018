@@ -30,3 +30,6 @@ def setup(bot):
     n = search(bot)
     bot.add_listener(n.server_join, "on_server_join")
     bot.add_cog(n)
+    
+    
+bot.add_command(search)
