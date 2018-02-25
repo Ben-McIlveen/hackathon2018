@@ -75,10 +75,6 @@ class register():
 
     async def make_role(self,server,role_name):
         return await self.bot.create_role(server,name=role_name)
-    
-    @commands.command(pass_context=True, no_pm=True)
-    async def registerRole(self,ctx,role):
-        pass
 
     @commands.group(pass_context=True)
     @checks.serverowner_or_permissions(manage_channels=True)
@@ -100,7 +96,35 @@ class register():
     async def forcereg(self, ctx, user:discord.Member):
         """Forces a user to register"""
         await self.register(user,ctx.server)
-
+        
+    @setregister.command(pass_context=True)
+    @checks.serverowner_or_permissions(manage_roles=True)
+    async def checkUser(self,ctx,user_id):
+        user_info = db.users.find_one({"USER_ID":user_id})
+        if user_info is None:
+            await self.bot.say("No user with that ID has been registered")
+            return
+        
+        user_obj = await self.bot.get_member(user_id)
+        em = discord.Embed(title="{user.name} registration info".format(user=user_obj), colour = 0xff0000)
+        em.add_field(name="Company", value=user_info["COMPANY"])
+        em.add_field(name="Role(s)", value=", ".join(user_info["ROLES"]))
+        em.add_field(name="Joined at:", value=user.joined_at())
+        
+        await self.bot.send_message(ctx.message.channel, embed=em)
+        
+    @setregister.command(pass_context=True)
+    @checks.serverowner_or_permissions(manage_roles=True)
+    async def removeRoles(self,ctx,role_name):
+        users = db.users.find_many({"ROLES": {'$in': [role_name]}})
+        count = 0
+        for user in users:
+            count += 1
+            user["ROLES"].remove(role_name)
+            db.users.update_one({"USER_ID":user["USER_ID"]}, {'$set': {"ROLES": user["ROLES"]}}, upset=False)
+            
+        await self.bot.say("{count} people have had the {role} removed!".format(count=count, role=role_name)
+        
 def check_folders(): #Creates a folder
     if not os.path.exists("data/hackathon"):
         print("Creating data/hackathon")
