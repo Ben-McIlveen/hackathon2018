@@ -123,7 +123,7 @@ class register():
             user["ROLES"].remove(role_name)
             db.users.update_one({"USER_ID":user["USER_ID"]}, {'$set': {"ROLES": user["ROLES"]}}, upset=False)
             
-        await self.bot.say("{count} people have had the {role} removed!".format(count=count, role=role_name)
+        await self.bot.say("{count} people have had the {role} removed!".format(count=count, role=role_name))
         
 def check_folders(): #Creates a folder
     if not os.path.exists("data/hackathon"):
