@@ -11,7 +11,7 @@ async def marco(ctx):
   await self.say("POLO!")
 
 @self.command(pass_context=True)
-async def userinfo(ctx, user: discord.Member):
+async def personinfo(ctx, user: discord.Member):
   embed=discord.Embed(title="User {}'s info".format(user.name), description = "Here's what I found!", color=0x1971ff)
   embeded.add_field(name="Name", value= user.name, inline=True)
   embeded.add_field(name="ID", vlaue= user.id, inline=True)
