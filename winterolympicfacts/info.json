@@ -1,8 +1,8 @@
 {
     "AUTHOR" : "CanT MaKE Up ThEiR MiNd TeaM",
-    "INSTALL_MSG" : "WinterOlympicFacts",
+    "INSTALL_MSG" : "stuff",
     "SHORT" : "Collection of winter facts requested by the community",
     "DESCRIPTION" : "A collection of winter olympic facts.",
-    "NAME" : "winterolympicfacts",
+    "NAME" : "stuff.py",
     "HIDDEN" : false
 }
