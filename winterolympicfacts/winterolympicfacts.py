@@ -30,7 +30,7 @@ async def userinfo(ctx, user: discord.Member):
   
 @self.command(pass_context=True)
 async def severinfo(ctx)
-embeded=discord.Embeded(title="Server {}'s info".format(server.message.name), description="Here's what I found!", color=0xff8d3d)
+embeded=discord.Embeded(title="Server {}'s info".format(ctx.message.server.name), description="Here's what I found!", color=0xff8d3d)
 embeded.add_field(name="Server Name:", value = ctx.message.server.name, inline=True)
 embeded.add_field(name="Server ID:", value = ctx.message.server.id, inline = True)
 embeded.add_field(name="Roles:", value = ctx.len(message.server.roles), inline=True)
