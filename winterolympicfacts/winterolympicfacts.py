@@ -17,8 +17,18 @@ async def marco(ctx):
   await self.say("POLO!")
 
 @self.command(pass_context=True)
-async def userinfo(ctx, user: Message):
-  embed=discord.Embed(title="User"+user.name)
+async def userinfo(ctx, user: discord.Member):
+  embed=discord.Embed(title="User {}'s info".format(user.name), description = "Here's what I found!", color=0x1971ff)
+  embeded.add_field(name="Name", value= user.name, inline=True)
+  embeded.add_field(name="ID", vlaue= user.id, inline=True)
+  embeded.add_field(name="Status",value= user.status, inline=True)
+  embeded.add_field(name="Highest Role", value=user.role_top, inline=True)
+  embeded.add_field(name="Lowest Role",value=user.role_bottom,inline=True)
+  embeded.add_field(name="Joined",value=user.joined_at,inline=True)
+  embeded.set_thumbnail(url=user_avatar)
+  embeded = embeded
+  await.say(embeded)
+  
   
   
   
