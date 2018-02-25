@@ -95,7 +95,7 @@ class register():
     @checks.serverowner_or_permissions(manage_roles=True)
     async def forcereg(self, ctx, user:discord.Member):
         """Forces a user to register"""
-        await self.register(user,ctx.server)
+        await self.register(user,ctx.message.server)
         
     @setregister.command(pass_context=True)
     @checks.serverowner_or_permissions(manage_roles=True)
