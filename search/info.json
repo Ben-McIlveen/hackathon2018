@@ -4,6 +4,6 @@
     "NAME" : "search",
     "SHORT" : "DMs a user when they gain a role",
     "DESCRIPTION" : "allows to search for other members",
-    "TAGS" : ["utility", "role", "managment", "notifications"],
+    "TAGS" : ["utility", "role", "managment", "notifications", "colabaration"],
     "HIDDEN" : false
 }
