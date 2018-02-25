@@ -3,7 +3,6 @@ from discord import Embed
 from .utils import checks
 from .utils.dataIO import dataIO
 import random
-rand=random.randint
 factrue = True
 class stuff():
   def __init__(self, bot):
@@ -37,9 +36,10 @@ await self.bot.say(embeded= embeded)
 @self.command(pass_context=True)
 async def randomworldfacts(self, ctx):
   world=["In Japan, you can hire a handsome man to watch sappy movies with you and wipe away your tears.", "In China, any TV shows and films featuring time travel are censored.", " Ethiopia follows a calendar that is seven years behind the rest of the world.","In Denmark, citizens have to select baby names from a list of 7,000 government-approved names.", "In Singapore, selling, importing or spitting out chewing gum is illegal.", "In France, you can marry a dead person.", "In Niue, an island nation in the South Pacific, its coins feature Disney and “Star Wars” characters.", "In Russia, authorities proposed to ban all things “emo” because they were declared a threat to national stability.",]
+  rand=random.randint(0,0,len(world)-1])
   while factrue == True:
     time.sleep(120)
-    await self.bot.say(world[0,len(world)-1])
+    await self.bot.say(world[0,rand])
   
 
   
