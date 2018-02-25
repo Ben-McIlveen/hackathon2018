@@ -3,6 +3,6 @@
     "INSTALL_MSG" : "stuff",
     "SHORT" : "Collection of winter facts requested by the community",
     "DESCRIPTION" : "A collection of winter olympic facts.",
-    "NAME" : "stuff.py",
+    "NAME" : "stuff",
     "HIDDEN" : false
 }
