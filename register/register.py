@@ -105,7 +105,7 @@ class register():
             await self.bot.say("No user with that ID has been registered")
             return
         
-        user_obj = await self.bot.get_member(user_id)
+        user_obj = await ctx.message.server.get_member(user_id)
         em = discord.Embed(title="{user.name} registration info".format(user=user_obj), colour = 0xff0000)
         em.add_field(name="Company", value=user_info["COMPANY"])
         em.add_field(name="Role(s)", value=", ".join(user_info["ROLES"]))
